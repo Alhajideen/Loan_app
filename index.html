@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="contain">
+            <form>
+                <div class="userAccbal">
+                    <h4>What is your present account balance?</h4> 
+                    <input type="number" placeholder="Please Enter your present account balance" name="userAccbal"
+                        id="userAccbal" /> <br>
+                    <label for="amountError" id="amountError"></label><br><br>
+                </div>
+                <div class="borrowAmount">
+                    <h4>How much do you want to borrow?</h4> 
+                    <input type="number" placeholder="Please Enter amount you wish to borrow?" name="borrowAmount"
+                        id="borrowAmount" /> <br>
+                    <label for="borrowError" id="borrowError"></label><br><br>
+                </div>
+                <div class="creditHistory">
+                    <h4>How old is your credit history?</h4>
+                    <select name="creditHistory" id="creditHistory">
+                        <option value="empty">Select Action</option>
+                        <option value="less">One month</option>
+                        <option value="less">Two Months</option>
+                        <option value="less">Three Months</option>
+                        <option value="less">Four Months</option>
+                        <option value="less">Five Months</option>
+                        <option value="above6">Six Months and above</option>
+                    </select><br><br>
+                    <label for="creditHistoryerror"></label>
+                </div>
+                <div class="lastDeposit">
+                    <h4>When was the last time you deposited in your account?</h4>
+                    <select name="lastDeposit" id="lastDeposit">
+                        <option value="">Select Action</option>
+                        <option value="oneMonth">Within the last One Month</option>
+                        <option value="twoMonth">More than one Month</option>
+                    </select><br><br>
+                    <div class="lastloan">
+                        <h4>When was last time you took a loan?</h4>
+                        <select name="lastloan" id="lastloan">
+                            <option value="">Select Action</option>
+                            <option value="lessThan">Less than 6months</option>
+                            <option value="moreThan">More than 6months</option>
+                        </select><br><br>
+                    </div>
+                    <div class="loanRepay">
+                        <h4>What is your loan repayment Period?</h4>
+                        <select name="loanRepay" id="loanRepay">
+                            <option value="">Select Action</option>
+                            <option value="lesserThan">Below 6months</option>
+                            <option value="greaterThan">More than 6months</option>
+                        </select><br><br>
+                    </div>
+                    <div class="accountType">
+                        <h4>What is your account Type?</h4>
+                        <select name="accountType" id="accountType">
+                            <option value="">Select Account Type</option>
+                            <option value="current">Currect Account</option>
+                            <option value="saving">Saving Account</option>
+                        </select><br><br>
+                    </div>
+                    <div class="regBtn">
+                        <button type="button" id="regBtn">Check Eligibility</button>
+                    </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
